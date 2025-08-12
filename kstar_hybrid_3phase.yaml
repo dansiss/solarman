@@ -414,14 +414,149 @@ parameters:
         registers: [ 3301 ]
         icon: 'mdi:battery-plus-variant'
 
-      - name: "Battery pack 1 SOC"
+      - name: "Battery pack 1 SoC"
         hidden:
         update_interval: 5
         state_class: "measurement"
         uom: "%"
         rule: 1
-        registers: [3450]
+        registers: [ 3450 ]
         icon: "mdi:battery"
+
+      - name: "Battery pack 1 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3449 ]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 2 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3493 ]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 2 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3494 ]
+        icon: "mdi:battery"  
+
+      - name: "Battery pack 3 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3537 ]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 3 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3538 ]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 4 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3581 ]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 4 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3582 ]
+        icon: "mdi:battery"
+
+      - name: "Battery pack 5 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3625 ]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 5 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [ 3626 ]
+        icon: "mdi:battery"
+
+      - name: "Battery pack 6 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [3669]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 6 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [3670]
+        icon: "mdi:battery"
+
+      - name: "Battery pack 7 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [3713]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 7 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [3714]
+        icon: "mdi:battery"
+
+      - name: "Battery pack 8 SoH"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [3757]
+        icon: "mdi:battery" 
+
+      - name: "Battery pack 8 SoC"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: "%"
+        rule: 1
+        registers: [3758]
+        icon: "mdi:battery" 
 
   - group: Inverter Information
     items:
@@ -737,7 +872,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3097 ]
+        registers: [3097]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Grid Frequency"
@@ -746,7 +881,7 @@ parameters:
         uom: "Hz"
         scale: 0.01
         rule: 1
-        registers: [ 3098 ]
+        registers: [3098]
         icon: 'mdi:sine-wave'
 
       - name: "R-phase Meter Current"
@@ -755,7 +890,7 @@ parameters:
         uom: "A"
         scale: 0.001
         rule: 2
-        registers: [ 3099 ]
+        registers: [3099]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Grid Power"
@@ -764,7 +899,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 2
-        registers: [ 3100 ]
+        registers: [3100]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Inverter Voltage"
@@ -773,7 +908,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3123 ]
+        registers: [3123]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Inverter Current"
@@ -782,7 +917,7 @@ parameters:
         uom: "A"
         scale: 0.01
         rule: 2
-        registers: [ 3124 ]
+        registers: [3124]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Inverter Frequency"
@@ -791,7 +926,7 @@ parameters:
         uom: "Hz"
         scale: 0.01
         rule: 1
-        registers: [ 3125 ]
+        registers: [3125]
         icon: 'mdi:sine-wave'
 
       - name: "R-phase Inverter Power"
@@ -800,7 +935,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 2
-        registers: [ 3126 ]
+        registers: [3126]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Backup Voltage"
@@ -809,7 +944,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3135 ]
+        registers: [3135]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Backup Current"
@@ -818,7 +953,7 @@ parameters:
         uom: "A"
         scale: 0.01
         rule: 1
-        registers: [ 3136 ]
+        registers: [3136]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Backup Power"
@@ -827,7 +962,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 1
-        registers: [ 3137 ]
+        registers: [3137]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "R-phase Load Power"
@@ -836,7 +971,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 1
-        registers: [ 3144 ]
+        registers: [3144]
         icon: 'mdi:home-lightning-bolt'
         
   - group: S Phase
@@ -847,7 +982,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3101 ]
+        registers: [3101]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Grid Frequency"
@@ -856,7 +991,7 @@ parameters:
         uom: "Hz"
         scale: 0.01
         rule: 1
-        registers: [ 3102 ]
+        registers: [3102]
         icon: 'mdi:sine-wave'
 
       - name: "S-phase Meter Current"
@@ -865,7 +1000,7 @@ parameters:
         uom: "A"
         scale: 0.001
         rule: 2
-        registers: [ 3103 ]
+        registers: [3103]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Grid Power"
@@ -874,7 +1009,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 2
-        registers: [ 3104 ]
+        registers: [3104]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Inverter Voltage"
@@ -883,7 +1018,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3127 ]
+        registers: [3127]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Inverter Current"
@@ -892,7 +1027,7 @@ parameters:
         uom: "A"
         scale: 0.01
         rule: 2
-        registers: [ 3128 ]
+        registers: [3128]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Inverter Frequency"
@@ -901,7 +1036,7 @@ parameters:
         uom: "Hz"
         scale: 0.01
         rule: 1
-        registers: [ 3129 ]
+        registers: [3129]
         icon: 'mdi:sine-wave'
 
       - name: "S-phase Inverter Power"
@@ -910,7 +1045,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 2
-        registers: [ 3130 ]
+        registers: [3130]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Backup Voltage"
@@ -919,7 +1054,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3138 ]
+        registers: [3138]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Backup Current"
@@ -928,7 +1063,7 @@ parameters:
         uom: "A"
         scale: 0.01
         rule: 1
-        registers: [ 3139 ]
+        registers: [3139]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Backup Power"
@@ -937,7 +1072,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 1
-        registers: [ 3140 ]
+        registers: [3140]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "S-phase Load Power"
@@ -946,7 +1081,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 1
-        registers: [ 3145 ]
+        registers: [3145]
         icon: 'mdi:home-lightning-bolt'
 
   - group: T Phase
@@ -957,7 +1092,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3105 ]
+        registers: [3105]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Grid Frequency"
@@ -966,7 +1101,7 @@ parameters:
         uom: "Hz"
         scale: 0.01
         rule: 1
-        registers: [ 3106 ]
+        registers: [3106]
         icon: 'mdi:sine-wave'
 
       - name: "T-phase Meter Current"
@@ -975,7 +1110,7 @@ parameters:
         uom: "A"
         scale: 0.001
         rule: 2
-        registers: [ 3107 ]
+        registers: [3107]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Grid Power"
@@ -984,7 +1119,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 2
-        registers: [ 3108 ]
+        registers: [3108]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Inverter Voltage"
@@ -993,7 +1128,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3131 ]
+        registers: [3131]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Inverter Current"
@@ -1002,7 +1137,7 @@ parameters:
         uom: "A"
         scale: 0.01
         rule: 2
-        registers: [ 3132 ]
+        registers: [3132]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Inverter Frequency"
@@ -1011,7 +1146,7 @@ parameters:
         uom: "Hz"
         scale: 0.01
         rule: 1
-        registers: [ 3133 ]
+        registers: [3133]
         icon: 'mdi:sine-wave'
 
       - name: "T-phase Inverter Power"
@@ -1020,7 +1155,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 2
-        registers: [ 3134 ]
+        registers: [3134]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Backup Voltage"
@@ -1029,7 +1164,7 @@ parameters:
         uom: "V"
         scale: 0.1
         rule: 1
-        registers: [ 3141 ]
+        registers: [3141]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Backup Current"
@@ -1038,7 +1173,7 @@ parameters:
         uom: "A"
         scale: 0.01
         rule: 1
-        registers: [ 3142 ]
+        registers: [3142]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Backup Power"
@@ -1047,7 +1182,7 @@ parameters:
         uom: "W"
         scale: 1
         rule: 1
-        registers: [ 3143 ]
+        registers: [3143]
         icon: 'mdi:home-lightning-bolt'
 
       - name: "T-phase Load Power"
@@ -1056,5 +1191,5 @@ parameters:
         uom: "W"
         scale: 1
         rule: 1
-        registers: [ 3146 ]
+        registers: [3146]
         icon: 'mdi:home-lightning-bolt'
