@@ -27,12 +27,27 @@ requests:
 
   # Continue with the needed input registers
   - start: 3228
-    end: 3249
+    end: 3352
     mb_functioncode: 0x04
 
-  # Last input register currently used by this definition file is 3301, so we can skip the rest for now.
-  - start: 3250
-    end: 3301
+  # Continue with the needed input registers
+  - start: 3353
+    end: 3477
+    mb_functioncode: 0x04
+
+  # Continue with the needed input registers
+  - start: 3478
+    end: 3602
+    mb_functioncode: 0x04
+
+  # Continue with the needed input registers
+  - start: 3603
+    end: 3727
+    mb_functioncode: 0x04
+
+  # Last input register currently used by this definition file is 3792, so we can skip the rest for now.
+  - start: 3727
+    end: 3792
     mb_functioncode: 0x04
 
 parameters:
