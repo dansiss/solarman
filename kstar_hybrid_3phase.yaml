@@ -447,6 +447,15 @@ parameters:
         registers: [ 3449 ]
         icon: "mdi:battery" 
 
+      - name: "Battery pack 1 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3448 ]
+        icon: "mdi:battery"
+
       - name: "Battery pack 2 SoH"
         hidden:
         update_interval: 5
@@ -463,7 +472,16 @@ parameters:
         uom: "%"
         rule: 1
         registers: [ 3494 ]
-        icon: "mdi:battery"  
+        icon: "mdi:battery"
+        
+      - name: "Battery pack 2 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3492 ]
+        icon: "mdi:battery"
 
       - name: "Battery pack 3 SoH"
         hidden:
@@ -483,6 +501,15 @@ parameters:
         registers: [ 3538 ]
         icon: "mdi:battery" 
 
+      - name: "Battery pack 3 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3536 ]
+        icon: "mdi:battery"
+
       - name: "Battery pack 4 SoH"
         hidden:
         update_interval: 5
@@ -499,6 +526,15 @@ parameters:
         uom: "%"
         rule: 1
         registers: [ 3582 ]
+        icon: "mdi:battery"
+
+      - name: "Battery pack 4 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3580 ]
         icon: "mdi:battery"
 
       - name: "Battery pack 5 SoH"
@@ -519,6 +555,15 @@ parameters:
         registers: [ 3626 ]
         icon: "mdi:battery"
 
+      - name: "Battery pack 5 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3624 ]
+        icon: "mdi:battery"
+
       - name: "Battery pack 6 SoH"
         hidden:
         update_interval: 5
@@ -535,6 +580,15 @@ parameters:
         uom: "%"
         rule: 1
         registers: [3670]
+        icon: "mdi:battery"
+
+      - name: "Battery pack 6 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3668 ]
         icon: "mdi:battery"
 
       - name: "Battery pack 7 SoH"
@@ -555,6 +609,15 @@ parameters:
         registers: [3714]
         icon: "mdi:battery"
 
+      - name: "Battery pack 7 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3712 ]
+        icon: "mdi:battery"
+
       - name: "Battery pack 8 SoH"
         hidden:
         update_interval: 5
@@ -572,6 +635,15 @@ parameters:
         rule: 1
         registers: [3758]
         icon: "mdi:battery" 
+
+      - name: "Battery pack 8 Cycle Count"
+        hidden:
+        update_interval: 5
+        state_class: "measurement"
+        uom: ""
+        rule: 1
+        registers: [ 3756 ]
+        icon: "mdi:battery"
 
   - group: Inverter Information
     items:
